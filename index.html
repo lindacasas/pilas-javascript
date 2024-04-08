@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>pilas</title>
+
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="title">PILAS</h1>
+        <section class="general-container">
+            <article class="container" id="exercise1">
+                <h3 class="exercise-title">Extraer elementos de una pila</h3>
+                <form id="form-ex1">
+                    <p class="container-data">
+                        Ingrese nombres de alimentos separados por comas:<br>
+                        <input type="text" id="ex1-input1" class="input-sty" oninput="validateInputText(this)" placeholder="manzana, cebolla, apio, papaya">
+                    </p>
+                    <p class="container-data">
+                        Ingrese el número de alimentos a mostrar:<br>
+                        <input type="number" id="ex1-input2" class="input-sty" placeholder="Ingrese un número">
+                    </p>
+                    <button id="button-ex1" class="btn btn-primary" type="submit">Mostrar alimentos</button>
+                </form>
+                <p class="result" id="result-ex1"></p>
+            </article>
+
+            <article class="container" id="exercise2">
+                <h3 class="exercise-title">Reemplazo único en una pila</h3>
+                <form id="form-ex2">
+                    <p class="container-data">
+                        Ingrese conjunto de numeros separados por comas:<br>
+                        <input type="text" id="ex2-input1" class="input-sty" oninput="validateInputNumber(this)" placeholder="1, 5, 22, 86, 7">
+                    </p>
+                    <p class="container-data">
+                        Ingrese dos números separados por comas (valor nuevo, valor viejo):<br>
+                        <input type="text" id="ex2-input2" class="input-sty" oninput="validateInputNumber(this)" placeholder="3, 22">
+                    </p>
+                    <button class="btn btn-primary" type="submit">Mostrar elemetos</button>
+                </form>
+                <p class="result" id="result-ex2"></p>
+            </article>
+
+            <article class="container" id="exercise3">
+                <h3 class="exercise-title">Viaje de ida y vuelta entre pueblos</h3>
+                <p class="container-data">Seleccione el pueblo origen:<br>
+                    <select id="ej3-sel1" class="dropdown-below">
+                        <option value="Samaipata">Samaipata</option>
+                        <option value="Sucre">Sucre</option>
+                        <option value="Potosí">Potosí</option>
+                        <option value="Uyuni">Uyuni</option>
+                        <option value="Copacabana">Copacabana</option>
+                    </select>
+                </p>
+                <p class="container-data">Seleccione el pueblo destino:<br>
+                    <select id="ej3-sel2" class="dropdown-below">
+                        <option value="Samaipata">Samaipata</option>
+                        <option value="Sucre">Sucre</option>
+                        <option value="Potosí">Potosí</option>
+                        <option value="Uyuni">Uyuni</option>
+                        <option value="Copacabana">Copacabana</option>
+                    </select>
+                </p>
+                <button id="button-ex3" class="btn btn-primary" type="submit">Ver el recorrido de ida y vuelta</button>
+                <p class="result" id="result-ex3"></p>
+            </article>
+
+            <article class="container" id="exercise4">
+                <h3 class="exercise-title">Retiro específico de una pila de contenedores</h3>
+                <form id="form-ex4">
+                    <p class="container-data">
+                        Ingrese el número de identificación de los contenedores separados por comas:<br>
+                        <input type="text" id="ex4-input1" class="input-sty" oninput="validateInputNumber(this)" placeholder="10, 20, 3, 4, 60">
+                    </p>
+                    <p class="container-data">
+                        Ingrese el número de contenedor que desea retirar:<br>
+                        <input type="number" id="ex4-input2" class="input-sty" placeholder="Ingrese un número">
+                    </p>
+                    <button class="btn btn-primary" type="submit">Mostrar contenedores</button>
+                </form>
+                <p class="result" id="result-ex4"></p>
+            </article>
+        </section>
+
+        <!-- Bootstrap JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- JS -->
+        <script src="main.js"></script>
+    </body>
+</html>
